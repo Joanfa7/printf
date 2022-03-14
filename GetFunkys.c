@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * 
- *
+ * get_specifier - function that produces output according to a format.
+ * @f: format
  */
 
 int (*get_specifier(char *format)
