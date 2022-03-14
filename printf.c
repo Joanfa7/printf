@@ -3,7 +3,7 @@
 /**
  * _printf - 
  * @x: integers
-* @conteo: counts specifiers
+ * @conteo: counts specifiers
  * Return:
  */
 
@@ -26,7 +26,9 @@ int _printf(const char *format, ...)
 			x++;
 		}
 		if (!format[x])
+		{
 			return (conteo);
+		}
 		f = get_specifier(&format[x + 1]);
 		if (f != NULL)
 		{
@@ -35,17 +37,24 @@ int _printf(const char *format, ...)
 			continiue;
 		}
 		if (!format[x + 1])
+		{
 			return (-1);
-		_putchar(format[x];
-				conteo++;
-				if (format[x + 1] == '%')
-				x += 2;
-				else
-				x++;
-				}
-				va_end(args);
-				return (conteo);
-				}
+		}
+		_putchar(format[x]);
+		conteo++;
+
+		if (format[x + 1] == '%')
+		{
+			x += 2;
+		}
+
+		else
+		{
+			x++;
+		}
+		va_end(args);
+		return (conteo);
+	}
 
 
 
