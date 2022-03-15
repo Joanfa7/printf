@@ -6,17 +6,41 @@
 #include <stdarg.h>
 #include <unistd.h>
 
-
-/* _putchar  */
-int _putchar(char c);
-
 /* task 0: function that produces output according to a format */
 int _printf(const char *format, ...);
+/*definition*/
+int get_specifier(char c, va_list *args);
 
 
-typedef struct convert
+/*definition*/
+int get_int(va_list *);
+/* definition */
+int get_string(va_list *);
+/*definition*/
+int get_char(va_list *);
+/*definition*/
+int get_percent(va_list *args);
+
+
+/*definition*/
+int StringPrinter(char *);
+/*definition*/
+int IntegerPrinter(int);
+/*definition*/
+int _putchar(char c);
+
+
+/*definition
+ * struct specifier- get the specifier
+ * @funkys: functions
+ * @f: pointer to va_list
+ */
+
+typedef struct specifier
 {
-	char *spec;
-	int (*f)(va_list);
+	char letter;
+	int (*f)(va_list *);
 }find_specifier;
+
+
 #endif
