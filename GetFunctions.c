@@ -41,7 +41,7 @@ int IntegerPrinter(int number)
 	if( number < 0)
 	{
 		_putchar('-');
-		cnt++;
+		cnt++
 		number = -number;
 	}
 

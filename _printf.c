@@ -4,7 +4,7 @@
  * _printf - 
  * @x: integers
 * @conteo: counts specifiers
- * Return:
+ * Return: success
  */
 
 int _printf(const char *format, ...)
