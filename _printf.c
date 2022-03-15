@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 
 	while (format[idx] != '\0')
 	{
-		if (format[idx] != '%' && format[idx + 1] != '\0')
+		if (format[idx] == '%' && format[idx + 1] != '\0')
 		{
 			conteo += get_specifier(format[idx + 1], &args);
 			idx++;
