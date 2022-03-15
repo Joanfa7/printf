@@ -1,16 +1,17 @@
 #include "main.h"
 
 /**
- * get_specifier - function that produces output according to a format.
- * @f: format
+ * get_specifier- function that produces output according to a format.
+ * @c: char
+ * @args: pointer to argument
+ * Return: success
  */
 
 int get_specifier(char c, va_list *args)
 {
 	int i = 0;
 
-	find_specifier specifier[] =
-	{
+	find_specifier specifier[] = {
 		{'c', get_char},
 		{'s', get_string},
 		{'%', get_percent},

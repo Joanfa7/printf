@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- *
- *
+ * _putchar- print char
+ * @c: char
+ * Return: success
  */
 
 int _putchar(char c)
@@ -12,8 +13,9 @@ int _putchar(char c)
 
 
 /**
- *
- *
+ * StringPrinter- prints a string
+ * @string: string
+ * Return: succes
  */
 
 int StringPrinter(char *string)
@@ -32,13 +34,18 @@ int StringPrinter(char *string)
 	return (idx);
 }
 
+/**
+ * IntegerPrinter- prints integer
+ * @number: integer
+ * Return: cnt
+ */
 
 int IntegerPrinter(int number)
 {
 	int cnt = 1;
 	unsigned int i;
 
-	if( number < 0)
+	if (number < 0)
 	{
 		_putchar('-');
 		cnt++

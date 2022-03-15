@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * get_char-
- * @args: variadic list
+ * get_char- sends char to _putchar
+ * @args: argument/ value
  * Return: success
  */
 
 int get_char(va_list *args)
 {
-	return(_putchar(va_arg(*args, int)));
+	return (_putchar(va_arg(*args, int)));
 }
 
 
 /**
- * get_string- 
- * @args: 
+ * get_string- send string to StringPrinter
+ * @args: argument/ value
  * Return: success
  */
 
@@ -25,9 +25,9 @@ int get_string(va_list *args)
 
 
 /**
- * get_percet- 
- * @args:
- * @Return: success
+ * get_percent- if '%' print and return error
+ * @args: argument/ value
+ * Return: error
  */
 
 int get_percent(va_list *args)
@@ -39,10 +39,11 @@ int get_percent(va_list *args)
 }
 
 /**
- * get_int- 
- * @args:
+ * get_int- send integer to IntegerPinter
+ * @args: argument/ value
  * Return: success
  */
+
 int get_int(va_list *args)
 {
 	return (IntegerPrinter(va_arg(*args, int)));
