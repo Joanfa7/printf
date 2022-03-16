@@ -1,4 +1,4 @@
 # printf
-Our printf function 
+Our printf function
 
 Testing

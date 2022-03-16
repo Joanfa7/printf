@@ -30,9 +30,9 @@ int IntegerPrinter(int);
 int _putchar(char c);
 
 
-/*definition
+/*
  * struct specifier- get the specifier
- * @funkys: functions
+ * @specifier: functions
  * @f: pointer to va_list
  */
 
@@ -40,7 +40,7 @@ typedef struct specifier
 {
 	char letter;
 	int (*f)(va_list *);
-}find_specifier;
+} find_specifier;
 
 
 #endif
